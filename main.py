@@ -22,7 +22,10 @@ def main():
         amount = op['operationAmount']['amount']
         currency = op['operationAmount']['currency']['name']
 
-        return f'''{date}{description}'''
+        return f'''{date}{description}
+{from_account} -> {to_account}
+{amount} {currency}'''
 
 
-
+if __name__ == '__main__':
+    main()
