@@ -3,6 +3,10 @@ from functions import load_operations, get_operations, mask_account, mask_card_n
 
 
 def main():
+    """
+    Основная работа программы
+    """
+
     for op in get_operations(load_operations()):
         date = datetime.fromisoformat(op["date"]).strftime("%d.%m.%Y")
         description = op.get("description", '')
@@ -30,9 +34,6 @@ def main():
             print(f'''{date} {description}
 {from_account} -> {to_account}
 {amount} {currency}''')
-
-
-
 
 
 if __name__ == '__main__':
