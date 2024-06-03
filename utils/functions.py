@@ -15,7 +15,7 @@ def mask_card_number(card_number):
     """
     Маскирует номер карты в формате XXXX XX** **** XXXX
     """
-    return f'{card_number[-16:-12]} {card_number[-11:-9]}** **** {card_number[-4:]}'
+    return f'{card_number[-16:-12]} {card_number[-12:-10]}** **** {card_number[-4:]}'
 
 
 def mask_account(account_number):
