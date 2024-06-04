@@ -29,11 +29,13 @@ def main():
         if op["description"] == "Открытие вклада":
             print(f'''{date} {description}
 -> {to_account}
-{amount} {currency}''')
+{amount} {currency}
+''')
         else:
             print(f'''{date} {description}
 {from_account} -> {to_account}
-{amount} {currency}''')
+{amount} {currency}
+''')
 
 
 if __name__ == '__main__':
