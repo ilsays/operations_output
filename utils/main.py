@@ -4,7 +4,7 @@ from functions import load_operations, get_operations, mask_account, mask_card_n
 
 def main():
     """
-    Основная работа программы
+    Основная работа программы, вывод операций по ТЗ
     """
 
     for op in get_operations(load_operations()):

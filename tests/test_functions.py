@@ -1,6 +1,7 @@
 from utils.functions import mask_card_number, mask_account, get_operations
 import pytest
 
+# Тестами покрыто 86 % кода
 
 def test_mask_card_number():
     assert mask_card_number('6831982476737658') == '6831 98** **** 7658'

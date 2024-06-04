@@ -4,7 +4,7 @@ from datetime import datetime
 
 def load_operations():
     """
-    Загрузка json-файла
+    Загрузка json-файла с данными по операциям
     """
 
     with open('operations.json', encoding='utf-8') as file:
